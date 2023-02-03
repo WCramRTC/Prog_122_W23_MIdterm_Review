@@ -1,0 +1,21 @@
+﻿<Window x:Class="MIdterm_Review.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MIdterm_Review"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="lbProducts" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="56,52,400,52" Width="NaN" SelectionChanged="lbProducts_SelectionChanged"/>
+        <Label x:Name="lblCurrentProduct" Content="Label" HorizontalAlignment="Left" Margin="575,34,0,0" VerticalAlignment="Top"/>
+        <RichTextBox Margin="455,81,67,81">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplayInformation" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
